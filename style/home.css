@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Jag lade till en bakgrundsbild i styling för att enklare lägga en text framför bilden. */
+main .welcome-banner{
+    background-image: url('/assets/welcome-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    max-width: 90%;
+    height: 12rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    margin:auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    /* Om bilden inte visas så finns en bakgrundsfärg. */
+    background-color:#9EE08C;
+}
+
+.text-btn-container{
+    display:flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    max-width: 13rem;
+    padding-left: 4rem; 
+}
+
+main .welcome-banner #welcome-text{
+    color:#3B3B3B;
+}
+
+main .welcome-banner #recipe-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 2.2rem;
+    background-color:#7B9F6C;
+    border-radius: 2px;
+    text-decoration:none;
+    color: white;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    transition: ease 0.3s background-color;
+}
+
+main .welcome-banner #recipe-btn:hover{
+    background-color: #67855b;
+}
+
+main #latest-recipe-header{
+    text-align:center;
+    margin-bottom:1rem;
+}
+
+main .recipe-example-container{
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    text-align:center;
+    margin:auto;
+    max-width: 70%;
+    background-color:#ECFEE8;
+    padding:2rem;
+}
+
+main .recipe-example-container #hamburger-img{
+    max-width: 12rem;
+    height: 10rem;
+}
+
+main .recipe-example-container .recipe-text-container{
+    padding-left:3rem;
+    padding-top: 1rem;
+    max-width: 25rem;
+    height: auto;
+    color: #3B3B3B;
+}
+
+main .recipe-example-container .recipe-text-header{
+    font-size: 0.9rem;
+    padding:1rem;
+}
+
+main .recipe-example-container #recipe-text{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+main .recipe-example-container #go-to-recipe{
+    text-decoration:none;
+    color: #3B3B3B;
+    position: relative;
+}
+
+#go-to-recipe::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    height: 0.5px; 
+    width: 0; 
+    background-color: #3B3B3B;
+    transition: width 0.3s ease;  
+}
+
+#go-to-recipe:hover::after {
+    width: 100%;  
+}
+
+main .new-book{
+    background-image: url('/assets/new-book-img.jpg');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    max-width: 90%;
+    height: 12rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    margin:auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+main .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .new-book .h3-text-new-book{
+    padding-bottom: 1rem;
+}
+
+main .new-book .p-text-new-book{
+    max-width: 18rem;
+}

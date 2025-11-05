@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matsmart Vardag</title>
+    
+    <!-- Styling för header, home och footer. För att inte duplicera header och footer styling, så länkar jag separat fil med styling. -->
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/home.css">
+    <link rel="stylesheet" href="/style/footer.css">
+
+</head>
+<body>
+    <header>
+        <figure>
+            <a href="/index.html"> 
+                <!-- Egenskapad logga. -->
+                <img id="logo-img" src="/assets/matsmart_vardag_logo.png" alt="matsmart_vardag_logga"> 
+            </a>
+        </figure>
+
+        <nav>
+            <ul class="nav-ul">
+                <li><a class="nav-li" href="/index.html">Hem</a></li>
+                <li><a class="nav-li" href="/pages/recipe.html">Recept</a></li>
+                <li><a class="nav-li" href="/pages/about-us.html">Om oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner med bild som bakgrundsbild. Bilden finns i Style-filen. Bilderna är tagna från en godkänd sida där man får lov att använda bilderna. -->
+        <section class="welcome-banner">
+            <div class="text-btn-container">
+            <h3 id="welcome-text"> Välkommen till min recepthemsida!</h3>
+            <a id="recipe-btn" href="/pages/recipe.html">Kolla in Recepten!</a>
+            </div>
+        </section>
+
+        <section >
+            <h3 id="latest-recipe-header">Senaste receptet</h3>
+            <div class="recipe-example-container">
+                <div>
+                <img id="hamburger-img" src="/assets/burger-food.jpg" alt="recept-hamburgare">
+            </div>
+
+            <div class="recipe-text-container">
+                <h4 id="recipe-text-header">Saftig Hemmagjord Hamburgare</h4>
+                <p id="recipe-text"> En perfekt kombination av saftigt kött, smält ost och krispiga grönsaker – enkelt att laga hemma! </p>
+                <a id="go-to-recipe" href="#">Till receptet</a>
+            </div>
+            </div>
+        </section>
+        
+        <article>
+            <p> Har du det stressigt hemma? en vardag som inte går ihop med barn att ta hand om, ett jobb att sköta och ett hem att hålla rent? Jag hör dig. Därför har jag med noga eftertänksamhet tagit fram recept som är både goda, bra för hälsan och snabba att röra ihop. Dessutom så är det enkelt att göra matlådor då jag ger exempel på hur man enkelt förvarar meten så att du kan äta lika gott hela veckan!</p>
+        </article>
+
+        <section class="new-book">
+            <div class="overlay">
+                <h3 class="h3-text-new-book">Snart händer det!</h3>
+                <p class="p-text-new-book"> Upptäck enkla, goda och kreativa recept som gör vardagen både roligare och godare – snart i bokform! </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer som kommer att visas på varje sida. Instagram och facebook är inte klickbara. -->
+    <footer>
+        <div class="footer-container">
+        <figure>
+            <a href="/index.html"> 
+                <img id="logo-img" src="/assets/matsmart_vardag_logo.png" alt="matsmart_vardag_logga"> 
+            </a>
+        </figure>
+
+        <div class="contact-container">
+            <p>Kontakt: info@recepthemsidan.se</p>
+            <p>Telefon: 081-234 56 89</p>
+            <p>Följ oss: 
+            <a class="follow-tag" href="#">Facebook</a> | 
+            <a class="follow-tag" href="#">Instagram</a> 
+        </p>
+        </div>
+        </div>
+        <!-- En copyright-symbol med året då jag skapat sidan. -->
+        <div>
+            <p id="created">&copy; Created 2025</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
