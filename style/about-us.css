@@ -1,0 +1,107 @@
+/* Upprepande styling som jag lägger i början i varje fil. */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Roboto, Arial, Helvetica, sans-serif;
+}
+
+.aboutMe-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    border-radius: 10px;
+    align-items:center;
+    text-align:center;
+    margin:auto;
+    max-width:60%;
+    padding:1rem;
+    background-color:#629857;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,5,0.1);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.aboutMe-container .aboutMe-text{
+    max-width: 20rem;
+    font-size:0.8rem;
+    line-height:1.1rem;
+    padding-top:1rem;
+}
+
+.aboutMe-container #image-of-creator{
+    max-width: 12rem;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,5,0.1);
+    margin-left:1rem;
+}
+
+.info-container{
+    margin:auto;
+    max-width: 60%;
+    background-color:#ECFEE8;
+    line-height:1.2rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,5,0.1);
+}
+
+.info-container p {
+    padding-top: 0.8rem;
+}
+
+main .new-book{
+    background-image: url('/assets/new-book-img.jpg');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    max-width: 90%;
+    height: 12rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    margin:auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+main .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .new-book .h3-text-new-book{
+    padding-bottom: 1rem;
+}
+
+main .new-book .p-text-new-book{
+    max-width: 18rem;
+}
+
+@media (max-width: 600px) {
+    .aboutMe-container{
+        max-width: 85%;
+    }
+
+    .aboutMe-container #image-of-creator{
+        max-width: 8rem;
+        height: auto;
+    }
+
+    .info-container{
+        max-width:85%;
+    }
+}

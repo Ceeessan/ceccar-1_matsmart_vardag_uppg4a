@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Roboto, Arial, Helvetica, sans-serif;
 }
 
 /* Jag lade till en bakgrundsbild i styling för att enklare lägga en text framför bilden. */
@@ -20,7 +20,7 @@ main .welcome-banner{
     margin:auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    /* Om bilden inte visas så finns en bakgrundsfärg. */
+    /* Om bilden inte visas så finns en bakgrundsfärg som default.. */
     background-color:#9EE08C;
 }
 
@@ -47,7 +47,7 @@ main .welcome-banner #recipe-btn{
     color: white;
     margin-top: 1rem;
     font-size: 0.9rem;
-    transition: ease 0.3s background-color;
+    transition: ease 0.3s;
 }
 
 main .welcome-banner #recipe-btn:hover{
@@ -60,32 +60,65 @@ main #latest-recipe-header{
 }
 
 main .recipe-example-container{
-    display:flex;
-    flex-direction: row;
-    text-align:center;
-    text-align:center;
+    position:relative;
     margin:auto;
+    margin-bottom: 4rem;
     max-width: 70%;
     background-color:#ECFEE8;
-    padding:2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,5,0.1);
+    padding:1rem;
+}
+
+main .recipe-example-container .img-div{
+    display:flex;
+    flex-direction:center;
+    align-items:center;
+    text-align:center;
+    margin:auto;
+
 }
 
 main .recipe-example-container #hamburger-img{
-    max-width: 12rem;
-    height: 10rem;
+    align-items:center;
+    text-align:center;
+    max-width: 85%;
+    height: 85%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,5,0.1);
+}
+
+main .recipe-example-container .heart-container{
+    display:flex;
+    justify-content: space-around;
+    position:absolute;
+    top:18px;
+    right:15px;
+    width: 2.2rem;
+    height:1.9rem;
+    align-items:center;
+    text-align:center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,5,0.1);
+    background-color:white;
+    padding:0.2rem;
 }
 
 main .recipe-example-container .recipe-text-container{
-    padding-left:3rem;
-    padding-top: 1rem;
-    max-width: 25rem;
+    position:absolute;
+    bottom:0.5rem;
+    right:0.5rem;
+    max-width: 40%;
     height: auto;
     color: #3B3B3B;
+    padding:0.5rem;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,5,0.1);
 }
 
 main .recipe-example-container .recipe-text-header{
-    font-size: 0.9rem;
-    padding:1rem;
+    font-size: 0.7rem;
 }
 
 main .recipe-example-container #recipe-text{
@@ -98,6 +131,8 @@ main .recipe-example-container #go-to-recipe{
     text-decoration:none;
     color: #3B3B3B;
     position: relative;
+    text-align:end;
+    align-items: end;
 }
 
 #go-to-recipe::after {
@@ -113,6 +148,23 @@ main .recipe-example-container #go-to-recipe{
 
 #go-to-recipe:hover::after {
     width: 100%;  
+}
+
+.info-about-website{
+    text-align:center;
+    margin:auto;
+    padding: 2rem;
+    max-width: 40%;
+    font-size:0.9rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0,0,5,0.1);
+    border-radius: 10px;
+    background-color:#fafff8;
+}
+
+#infoText2{
+    padding-top: 1rem;
 }
 
 main .new-book{
@@ -151,4 +203,25 @@ main .new-book .h3-text-new-book{
 
 main .new-book .p-text-new-book{
     max-width: 18rem;
+}
+
+/* För att snygga till vissa delar på hemsidan för en mindre vy så snyggar jag till bledd, höjd och textstorlek. */
+@media (max-width: 600px) {
+
+main .recipe-example-container{
+    max-width: 90%;
+    height: 18rem;
+}
+
+main .recipe-example-container .recipe-text-container{
+    padding: 1rem;
+}
+
+main .recipe-example-container .recipe-text-header{
+    font-size: 0.6rem;
+}
+
+.info-about-website{
+    max-width: 70%;
+}
 }

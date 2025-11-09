@@ -4,8 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matsmart Vardag</title>
+
+    <!-- Använder Roboto som en font för att hålla en stilren texttyp. -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styling för header, home och footer. För att inte duplicera header och footer styling, så länkar jag separat fil med styling. -->
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/about-us.css">
+    <link rel="stylesheet" href="/style/footer.css">
+
 </head>
 <body>
-    
+    <header>
+        <figure>
+            <a href="/index.html"> 
+                <!-- Egenskapad logga. -->
+                <img id="logo-img" src="/assets/matsmart_vardag_logo.png" alt="matsmart_vardag_logga"> 
+            </a>
+        </figure>
+
+        <nav>
+            <ul class="nav-ul">
+                <li><a class="nav-li" href="/index.html">Hem</a></li>
+                <li><a class="nav-li" href="/pages/recipe.html">Recept</a></li>
+                <li><a class="nav-li" href="/pages/about-us.html">Om oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Info-delen om skaparen av recepten lägger jag i en article. -->
+        <article class="aboutMe-container">
+            <div>
+                <h3 class="aboutMe-header">Vem är jag?</h3>
+                <p class="aboutMe-text">Jag heter Anna, är tvåbarnsmamma och älskar att laga mat som både går snabbt och smakar fantastiskt. Efter att ha jonglerat jobb, barn och vardagskaos insåg jag hur viktigt det är att ha enkla recept som faktiskt funkar — utan att tumma på smaken. Här delar jag mina favoriter för en mer matsmart vardag!</p>
+            </div>
+
+            <div>
+                <img id="image-of-creator" src="/assets/me.jpg" alt="image-of-creator">
+            </div>
+        </article>
+
+        <section class="info-container">
+            <p> <strong>Matsmart Vardag</strong> skapades för dig som vill göra vardagen lite enklare – och lite godare. Här hittar du recept som går snabbt att laga, utan krångliga ingredienser eller långa listor.</p>
+            <p>Idén föddes ur den stressiga vardagen många av oss känner igen: jobb, familj, hem och allt däremellan. Därför samlas här recept som passar för matlådor, snabba middagar och smarta vardagslösningar – så att du kan lägga mindre tid i köket och mer tid på det som faktiskt betyder något.</p>
+            <p>Välkommen till Matsmart Vardag – där god mat möter enkelhet.</p>
+        </section>
+
+        <section class="new-book">
+            <div class="overlay">
+                <h3 class="h3-text-new-book">Snart händer det!</h3>
+                <p class="p-text-new-book"> Upptäck enkla, goda och kreativa recept som gör vardagen både roligare och godare – snart i bokform! </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer som kommer att visas på varje sida. Instagram och facebook är inte klickbara. -->
+    <footer>
+        <div class="footer-container">
+        <figure>
+            <a href="/index.html"> 
+                <img id="logo-img" src="/assets/matsmart_vardag_logo.png" alt="matsmart_vardag_logga"> 
+            </a>
+        </figure>
+
+        <div class="contact-container">
+            <p>Kontakt: info@recepthemsidan.se</p>
+            <p>Telefon: 081-234 56 89</p>
+            <p>Följ oss: 
+            <a class="follow-tag" href="#">Facebook</a> | 
+            <a class="follow-tag" href="#">Instagram</a> 
+        </p>
+        </div>
+
+        <div class="footer-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80782.75479845817!2d18.0685801!3d59.3293235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6d7b6d5b6f%3A0x4019078290f0a40!2sStockholm!5e0!3m2!1ssv!2sse!4v1234567890"
+                width="100%" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        </div>
+        <!-- En copyright-symbol med året då jag skapat sidan. -->
+        <div>
+            <p id="created">&copy; Created 2025</p>
+        </div>
+        
+    </footer>
 </body>
 </html>

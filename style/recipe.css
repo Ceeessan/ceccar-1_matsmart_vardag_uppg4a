@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Roboto, Arial, Helvetica, sans-serif;
+}
+
+.main-recipe-page{
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+}
+
+.main-recipe-side1{
+    width: 25%;
+    border-right: solid 1px #d0d0d0;
+    padding: 1rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.main-recipe-side1 ul{
+    list-style-type: none;
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem;
+}
+
+.main-recipe-side1 li{
+    list-style-type: none;
+    padding-top: 0.5rem;
+}
+
+.main-recipe-side2{
+    width: 75%;
+    height: auto;
+    padding:1rem;
+    margin-bottom: 4rem;
+}
+
+.main-recipe-side2 .img-div{
+    padding-top:1rem;
+}
+
+.main-recipe-side2 .recipe-img{
+    border-radius: 10px;
+    width: 12rem;
+    height: 10rem;
+}
+
+.main-recipe-side2 .recipe-card{
+    display:flex;
+    position:relative;
+    flex-direction: row;
+    max-width: 80%;
+    height: auto;
+    background-color:#ECFEE8;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,5,0.1);
+    padding:1rem;
+    margin-top: 2rem;
+}
+
+.recipe-text-container{
+    padding: 1rem;
+    max-width: 28rem;
+}
+
+.recipe-text-container .recipe-text{
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem;
+}
+
+.recipe-text-container .go-to-recipe{
+    text-decoration:none;
+    color: #3B3B3B;
+    position: relative;
+    text-align:end;
+    align-items: end;
+}
+
+.go-to-recipe::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    height: 0.5px; 
+    width: 0; 
+    background-color: #3B3B3B;
+    transition: width 0.3s ease;  
+}
+
+.go-to-recipe:hover::after {
+    width: 100%;  
+}
+
+.main-recipe-side2 .heart-container{
+    display:flex;
+    justify-content: space-around;
+    position:absolute;
+    top:18px;
+    right:15px;
+    width: 2.4rem;
+    height:1.9rem;
+    align-items:center;
+    text-align:center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,5,0.1);
+    background-color:white;
+    padding:0.2rem;
+}
+
+.heart-container .likes{
+    font-size:0.7rem;
+}
+
+@media (max-width: 600px) {
+    .main-recipe-side1{
+        width: 30rem;
+    }
+
+    .main-recipe-side2{
+        width: 70rem;
+    }
+
+    .main-recipe-side2 .recipe-card{
+        flex-direction:column;
+    }
+
+    .main-recipe-side2 .hamburger-img{
+        width: 12rem;
+    }
+
+    .recipe-text-container{
+        padding-left:0;
+    }
+
+}
