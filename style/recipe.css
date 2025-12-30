@@ -127,7 +127,7 @@
     font-size:0.7rem;
 }
 
-/*  */
+/* För responsiv design har jag ändrat layouten på korten så texten hamnar under bilden. */
 @media (max-width: 600px) {
     .main-recipe-side1{
         width: 30rem;
