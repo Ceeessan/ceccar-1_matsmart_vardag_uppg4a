@@ -154,7 +154,7 @@ main .recipe-example-container #go-to-recipe{
     text-align:center;
     margin:auto;
     padding: 2rem;
-    max-width: 40%;
+    max-width: 60%;
     font-size:0.9rem;
     letter-spacing: 0.05rem;
     line-height: 1.2rem;
@@ -168,7 +168,7 @@ main .recipe-example-container #go-to-recipe{
 }
 
 main .new-book{
-    background-image: url('assets/new-book-img.jpg');
+    background-image: url('/assets/new-book-img.jpg');
     background-size: cover;
     background-position: center;
     position:relative;
@@ -209,12 +209,15 @@ main .new-book .p-text-new-book{
 @media (max-width: 600px) {
 
 main .recipe-example-container{
+    
     max-width: 90%;
     height: 18rem;
 }
 
 main .recipe-example-container .recipe-text-container{
     padding: 1rem;
+    max-width: 70%;
+    bottom: -2rem;
 }
 
 main .recipe-example-container .recipe-text-header{
@@ -222,6 +225,6 @@ main .recipe-example-container .recipe-text-header{
 }
 
 .info-about-website{
-    max-width: 70%;
+    max-width: 75%;
 }
 }

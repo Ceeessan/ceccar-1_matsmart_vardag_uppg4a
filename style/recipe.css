@@ -30,6 +30,19 @@
     padding-top: 0.5rem;
 }
 
+.veggie-list a, .meat-list a{
+    list-style: none;
+    color: #3B3B3B;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+.veggie-list a:hover, .meat-list a:hover{
+    color: rgb(8, 109, 8);
+    font-size: 1.01rem;
+}
+
 .main-recipe-side2{
     width: 75%;
     height: auto;
@@ -114,6 +127,7 @@
     font-size:0.7rem;
 }
 
+/*  */
 @media (max-width: 600px) {
     .main-recipe-side1{
         width: 30rem;
@@ -121,6 +135,11 @@
 
     .main-recipe-side2{
         width: 70rem;
+    }
+
+    .main-recipe-side2 .recipe-img{
+        width: 8rem;
+        max-height: 7rem;
     }
 
     .main-recipe-side2 .recipe-card{

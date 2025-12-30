@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matsmart Vardag</title>
+
+    <!-- Använder Roboto som en font för att hålla en stilren texttyp. -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styling för header, home och footer. För att inte duplicera header och footer styling, så länkar jag separat fil med styling. -->
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/single-recipe-page.css">
+    <link rel="stylesheet" href="/style/footer.css">
+
+</head>
+<body>
+    <header>
+        <figure>
+            <a href="/index.html"> 
+                <!-- Egenskapad logga. -->
+                <img id="logo-img" src="/assets/matsmart_vardag_logo.png" alt="matsmart_vardag_logga"> 
+            </a>
+        </figure>
+
+        <nav>
+            <ul class="nav-ul">
+                <li><a class="nav-li" href="/index.html">Hem</a></li>
+                <li><a class="nav-li" href="/pages/recipe.html">Recept</a></li>
+                <li><a class="nav-li" href="/pages/about-us.html">Om oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="going-back-section">
+            <a href="/pages/recipe.html" class="back-link"><img id="arrow-left" src="/assets/arrow-left.svg" alt="arrow-left">
+            <span id="back-text"> Tillbaka </span>
+            </a>
+        </section>
+
+        <section>
+            <div class="img-ingredients-container">
+                <img class="hamburger-img" src="/assets/truffle-pasta.jpg" alt="burger-img">
+                <div class="ingredients-container">
+                <h3>Ingredienser</h3>
+                    <ul>
+                        <li>400 g pasta (t.ex. tagliatelle eller spaghetti)</li>
+                        <li>2 dl vispgrädde</li>
+                        <li>1 msk tryffelolja</li>
+                        <li>1 schalottenlök</li>
+                        <li>1 vitlöksklyfta</li>
+                        <li>50 g riven parmesanost</li>
+                        <li>1 msk smör</li>
+                        <li>Salt</li>
+                        <li>Svartpeppar</li>
+                        <li>Persilja</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="time-container">
+                <ul>
+                    <li><img src="/assets/clock.svg" alt="clock">25 min</li>
+                    <li><img class="plate" src="/assets/plate.png" alt="plate"> 4 portioner</li>
+                    <li><img class="plate" src="/assets/ingredient.png" alt="ingredient">10 ingredienser</li>
+                </ul> 
+            </div>
+
+            <!-- Använda p-element istället för ol. Jag vill styla siffrorna enklare med hjälp av span -->
+            <div class="to-do-container">
+                <h3> Gör såhär:</h3>
+                <!-- För en bättre styling använder jag span för att enbart styla siffrorna. -->
+                <p> <span>1.</span> Koka pastan enligt anvisningarna på förpackningen.</p>
+                <p> <span>2.</span> Finhacka schalottenlök och vitlök.</p>
+                <p> <span>3.</span> Smält smöret i en stekpanna på medelvärme. Fräs lök och vitlök tills de blir mjuka utan att få färg.</p>
+                <p> <span>4.</span> Häll i grädden och låt sjuda i några minuter.</p>
+                <p> <span>5.</span> Tillsätt tryffelolja och riven parmesanost. Smaka av med salt och svartpeppar och persilja.</p>
+                <p> <span>6.</span> Blanda ner den kokta pastan i såsen.</p>
+                <p> <span>7.</span> Servera direkt.</p>
+          
+
+            </div>
+
+            <div class="tips-container">
+                <img class="bulb" src="/assets/bulb.svg" alt="bulb"> 
+                <p class="tips-text"><strong>Tips:</strong> Vill du göra rätten mer mättande kan du lägga till svamp eller kyckling. Förvara rester i lufttät matlåda i kylskåp, håller upp till 2 dagar. Vid uppvärmning kan en liten klick grädde kräma till pastan igen! </p>
+             </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer som kommer att visas på varje sida. Instagram och facebook är inte klickbara. -->
+    <footer>
+        <div class="footer-container">
+        <figure>
+            <a href="/index.html"> 
+                <img id="logo-img" src="/assets/matsmart_vardag_logo.png" alt="matsmart_vardag_logga"> 
+            </a>
+        </figure>
+
+        <div class="contact-container">
+            <p>Kontakt: info@recepthemsidan.se</p>
+            <p>Telefon: 081-234 56 89</p>
+            <p>Följ oss: 
+            <a class="follow-tag" href="#">Facebook</a> | 
+            <a class="follow-tag" href="#">Instagram</a> 
+        </p>
+        </div>
+
+        <div class="footer-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80782.75479845817!2d18.0685801!3d59.3293235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6d7b6d5b6f%3A0x4019078290f0a40!2sStockholm!5e0!3m2!1ssv!2sse!4v1234567890"
+                width="100%" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        </div>
+        <!-- En copyright-symbol med året då jag skapat sidan. -->
+        <div>
+            <p id="created">&copy; Created 2025</p>
+        </div>
+        
+    </footer>
+</body>
+</html>

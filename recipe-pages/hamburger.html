@@ -10,7 +10,7 @@
     
     <!-- Styling för header, home och footer. För att inte duplicera header och footer styling, så länkar jag separat fil med styling. -->
     <link rel="stylesheet" href="/style/header.css">
-    <link rel="stylesheet" href="/style/home.css">
+    <link rel="stylesheet" href="/style/single-recipe-page.css">
     <link rel="stylesheet" href="/style/footer.css">
 
 </head>
@@ -33,45 +33,56 @@
     </header>
 
     <main>
-        <!-- Banner med bild som bakgrundsbild. Bilden finns i Style-filen. Bilderna är tagna från en godkänd sida där man får lov att använda bilderna. -->
-        <section class="welcome-banner">
-            <div class="text-btn-container">
-            <h3 id="welcome-text"> Välkommen till min recepthemsida!</h3>
-            <a id="recipe-btn" href="/pages/recipe.html">Kolla in Recepten!</a>
-            </div>
+
+        <section class="going-back-section">
+            <a href="/pages/recipe.html" class="back-link"><img id="arrow-left" src="/assets/arrow-left.svg" alt="arrow-left">
+            <span id="back-text"> Tillbaka </span>
+            </a>
         </section>
 
-        <section >
-            <h3 id="latest-recipe-header">Senaste receptet</h3>
-            <div class="recipe-example-container">
-            <div class="img-div">
-                <img id="hamburger-img" src="/assets/burger-food.jpg" alt="recept-hamburgare">
+        <section>
+            <div class="img-ingredients-container">
+                <img class="hamburger-img" src="/assets/burger-food.jpg" alt="burger-img">
+                <div class="ingredients-container">
+                <h3>Ingredienser</h3>
+                    <ul>
+                        <li>Brioche Hamburgerbröd</li>
+                        <li>Nötfärs</li>
+                          <li>Salt & Peppar</li>
+                        <li>Cheddarost</li>
+                        <li>Coleslaw</li>
+                        <li>Valfri sallad</li>
+                        <li>Valfria pommes frites</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="heart-container">
-                <img id="heartIcon" src="/assets/heart-icon.svg" alt="like-button">
-                <p>3</p>
-            </div>    
+            <div class="time-container">
+                <ul>
+                    <li><img src="/assets/clock.svg" alt="clock"> 25 min</li>
+                    <li><img class="plate" src="/assets/plate.png" alt="plate"> 4 portioner</li>
+                    <li><img class="plate" src="/assets/ingredient.png" alt="ingredient">8 ingredienser</li>
+                </ul> 
+            </div>
 
-            <div class="recipe-text-container">
-                <h4 id="recipe-text-header">Saftig Hemmagjord Hamburgare</h4>
-                <p id="recipe-text"> En perfekt kombination av saftigt kött, smält ost och krispiga grönsaker – enkelt att laga hemma! </p>
-                <a id="go-to-recipe" href="/recipe-pages/hamburger.html">Till receptet</a>
+            <!-- Använda p-element istället för ol. Jag vill styla siffrorna enklare med hjälp av span -->
+            <div class="to-do-container">
+                <h3> Gör såhär:</h3>
+                <!-- För en bättre styling använder jag span för att enbart styla siffrorna. -->
+                <p> <span>1.</span> Forma köttfärsen till burgare och krydda med salt och peppar. </p>
+                <p> <span>2.</span> Stek burgarna i en panna på medelhög värme i ca 3-4 min per sida. </p>
+                <p> <span>3.</span> Rosta hamburgerbröden lätt i pannan eller ugnen. </p>
+                <p> <span>4.</span> Lägg på ost om du vill, sallad, tomat och lök på brödet. </p>
+                <p> <span>5.</span> Montera burgaren och servera med valfritt tillbehör! </p>
             </div>
-            </div>
+
+            <div class="tips-container">
+                <img class="bulb" src="/assets/bulb.svg" alt="bulb"> 
+                <p class="tips-text"><strong>Tips:</strong> Gör flera burgare samtidigt och förvara dem i matlådor. De håller sig saftiga i kylen 2–3 dagar och kan snabbt värmas upp för en snabb lunch eller middag under veckan. Hacka upp lite grönsaker, kanske en morot istället för pommes, för att fylla ut middagens godheter!</p>
+             </div>
+
         </section>
-        
-        <article class="info-about-website">
-            <p id="infoText1"> Har du en stressig vardag med jobb, barn och hem att ta hand om? Jag hör dig!</p> 
-            <p id="infoText2"> Här hittar du recept som är både goda, hälsosamma och snabba att laga – perfekta för dig som vill spara tid utan att tumma på smaken. Dessutom får du tips på hur du enkelt kan förbereda matlådor och njuta av god och enkel mat hela veckan lång!</p>
-        </article>
 
-        <section class="new-book">
-            <div class="overlay">
-                <h3 class="h3-text-new-book">Snart händer det!</h3>
-                <p class="p-text-new-book"> Upptäck enkla, goda och kreativa recept som gör vardagen både roligare och godare – snart i bokform! </p>
-            </div>
-        </section>
     </main>
 
     <!-- Footer som kommer att visas på varje sida. Instagram och facebook är inte klickbara. -->
