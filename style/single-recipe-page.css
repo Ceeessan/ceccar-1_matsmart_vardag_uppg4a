@@ -50,7 +50,7 @@ main .ingredients-container h3{
 }
 
 main .ingredients-container ul {
-     list-style-image: url('/assets/green-tree.svg'); 
+     list-style-image: url('assets/green-tree.svg'); 
      padding-left: 1.2rem;
 }
 
