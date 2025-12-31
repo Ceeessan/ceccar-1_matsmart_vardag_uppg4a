@@ -16,7 +16,7 @@
     padding: 0.5rem;
 }
 
-.footer-container #logo-img{
+.footer-container .logo-img{
     max-width: 5rem;
     height: auto;
     border-radius: 50%;
@@ -45,6 +45,8 @@
 }
 
 .footer-map iframe{
+    width: 100%;
+    height: auto;
     max-width: 15rem;
     max-height: 12rem;
 }

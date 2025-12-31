@@ -15,7 +15,7 @@ header figure{
     text-align:center;
 }
 
-header #logo-img{
+header .logo-img{
     max-width: 5rem;
     height: auto;
     border-radius: 50%;
