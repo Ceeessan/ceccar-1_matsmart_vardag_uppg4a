@@ -7,7 +7,7 @@
 
 /* Jag lade till en bakgrundsbild i styling för att enklare lägga en text framför bilden. */
 main .welcome-banner{
-    background-image: url('assets/welcome-banner.jpg');
+    background-image: url('/assets/welcome-banner.jpg');
     background-size: cover;
     background-position: center;
     position:relative;
@@ -168,7 +168,7 @@ main .recipe-example-container #go-to-recipe{
 }
 
 main .new-book{
-    background-image: url('assets/new-book-img.jpg');
+    background-image: url('/assets/new-book-img.jpg');
     background-size: cover;
     background-position: center;
     position:relative;
