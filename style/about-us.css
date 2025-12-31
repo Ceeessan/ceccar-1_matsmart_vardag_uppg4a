@@ -54,7 +54,7 @@
 }
 
 main .new-book{
-    background-image: url('/assets/new-book-about.jpg');
+    background-image: url('../assets/new-book-about.jpg');
     background-size: cover;
     background-position: center;
     position:relative;
